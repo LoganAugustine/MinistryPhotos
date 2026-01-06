@@ -146,32 +146,40 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script>
-				fetch('photos.json')
-				  .then(response => response.json())
-				  .then(photos => {
-				    const main = document.getElementById('main');
-				
-				    photos.forEach(photo => {
-				      const article = document.createElement('article');
-				      article.className = 'thumb';
-				
-				      article.innerHTML = `
-				        <a href="${photo.src}" class="image">
-				          <img src="${photo.src}" loading="lazy" alt="${photo.title}">
-				        </a>
-				        <h2>${photo.title}</h2>
-				        <p>${photo.description}</p>
-				      `;
-				
-				      main.appendChild(article);
-				    });
-				  });
-				</script>
+			fetch('photos.json')
+			  .then(response => {
+				if (!response.ok) {
+				  throw new Error('HTTP error ' + response.status);
+				}
+				return response.json();
+			  })
+			  .then(photos => {
+				const main = document.getElementById('main');
+			
+				photos.forEach(photo => {
+				  const article = document.createElement('article');
+				  article.className = 'thumb';
+			
+				  article.innerHTML = `
+					<a href="${photo.src}" class="image">
+					  <img src="${photo.src}" loading="lazy" alt="${photo.title}">
+					</a>
+					<h2>${photo.title}</h2>
+					<p>${photo.description}</p>
+				  `;
+			
+				  main.appendChild(article);
+				});
+			  })
+			  .catch(err => console.error('Gallery error:', err));
+			</script>
+
 			<script src="assets/js/main.js"></script>
 
 	</body>
 
 </html>
+
 
 
 
