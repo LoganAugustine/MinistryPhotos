@@ -29,7 +29,7 @@
 
 				<!-- Main -->
 					<div id="main">
-						<article class="thumb">
+						<!-- <article class="thumb">
 							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
 							<h2>Magna feugiat lorem</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
@@ -88,8 +88,8 @@
 							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
 							<h2>Vehicula id nulla dignissim</h2>
 							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
+						</article> -->
+
 
 				<!-- Footer -->
 					<footer id="footer" class="panel">
@@ -145,11 +145,34 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script>
+				fetch('photos.json')
+				  .then(response => response.json())
+				  .then(photos => {
+				    const main = document.getElementById('main');
+				
+				    photos.forEach(photo => {
+				      const article = document.createElement('article');
+				      article.className = 'thumb';
+				
+				      article.innerHTML = `
+				        <a href="${photo.src}" class="image">
+				          <img src="${photo.src}" loading="lazy" alt="${photo.title}">
+				        </a>
+				        <h2>${photo.title}</h2>
+				        <p>${photo.description}</p>
+				      `;
+				
+				      main.appendChild(article);
+				    });
+				  });
+				</script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
 
 </html>
+
 
 
 
