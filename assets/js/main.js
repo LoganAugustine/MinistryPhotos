@@ -255,7 +255,7 @@
 				onPopupOpen: function() { $body.addClass('modal-active'); },
 				overlayOpacity: 0,
 				popupCloserText: '',
-				popupHeight: 150,
+				popupHeight: auto,
 				popupLoaderText: '',
 				popupSpeed: 450,  // Originally 300
 				popupWidth: 150,
@@ -267,6 +267,7 @@
 				usePopupLoader: true,
 				usePopupNav: true,
 				windowMargin: 100  // Oringinally 50
+
 			});
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
@@ -280,5 +281,6 @@
 
 
 })(jQuery);
+
 
 
