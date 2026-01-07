@@ -2059,6 +2059,8 @@ input, select, textarea {
 
 body.modal-active #header,
 body.modal-active #footer {
-  display: none;
+  display: none !important;
+  visibility: hidden;
 }
+
 
