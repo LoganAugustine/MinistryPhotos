@@ -255,7 +255,7 @@
 				onPopupOpen: function() { $body.addClass('modal-active'); },
 				overlayOpacity: 0,
 				popupCloserText: '',
-				popupHeight: auto,
+				popupHeight: 600,
 				popupLoaderText: '',
 				popupSpeed: 450,  // Originally 300
 				popupWidth: 150,
@@ -281,6 +281,7 @@
 
 
 })(jQuery);
+
 
 
 
