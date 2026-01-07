@@ -2055,3 +2055,10 @@ input, select, textarea {
   height: 100%;
   object-fit: cover;
 }
+
+
+body.modal-active #header,
+body.modal-active #footer {
+  display: none;
+}
+
