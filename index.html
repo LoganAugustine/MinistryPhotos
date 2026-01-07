@@ -145,6 +145,8 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 			<script>
 			fetch('photos.json')
 			  .then(response => response.json())
@@ -165,23 +167,15 @@
 			
 			      main.appendChild(article);
 			    });
-			
-			    // 🔑 Reinitialize Poptrox AFTER images exist
-			    $('#main').poptrox({
-			      baseZIndex: 20000,
-			      usePopupCaption: true,
-			      usePopupNav: true,
-			      fadeSpeed: 300
-			    });
+				$('#main').poptrox('reload');
+			    
 			  });
 			</script>
-
-
-			<script src="assets/js/main.js"></script>
 
 	</body>
 
 </html>
+
 
 
 
