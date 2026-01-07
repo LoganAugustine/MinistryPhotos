@@ -257,7 +257,7 @@
 				popupCloserText: '',
 				popupHeight: 150,
 				popupLoaderText: '',
-				popupSpeed: 300,
+				popupSpeed: 450,  // Originally 300
 				popupWidth: 150,
 				selector: '.thumb > a.image',
 				usePopupCaption: true,
@@ -266,7 +266,7 @@
 				usePopupForceClose: true,
 				usePopupLoader: true,
 				usePopupNav: true,
-				windowMargin: 50
+				windowMargin: 100  // Oringinally 50
 			});
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
@@ -280,4 +280,5 @@
 
 
 })(jQuery);
+
 
