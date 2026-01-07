@@ -148,6 +148,7 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
+
 			fetch('photos.json')
 			  .then(response => response.json())
 			  .then(photos => {
@@ -167,14 +168,45 @@
 			
 			      main.appendChild(article);
 			    });
-				$('#main').poptrox('reload');
-			    
+			
+			    // Initialize Poptrox now that images exist
+			    $('#main').poptrox({
+			      baseZIndex: 20000,
+			      caption: function($a) {
+			        let s = '';
+			        $a.nextAll().each(function() { s += this.outerHTML; });
+			        return s;
+			      },
+			      fadeSpeed: 300,
+			      onPopupOpen: function() { $('body').addClass('modal-active'); },
+			      onPopupClose: function() { $('body').removeClass('modal-active'); },
+			      overlayOpacity: 0,
+			      popupCloserText: '',
+			      popupHeight: 'auto',
+			      popupLoaderText: '',
+			      popupSpeed: 300,
+			      popupWidth: 'auto',
+			      selector: '.thumb > a.image',
+			      usePopupCaption: true,
+			      usePopupCloser: true,
+			      usePopupDefaultStyling: false,
+			      usePopupForceClose: true,
+			      usePopupLoader: true,
+			      usePopupNav: true,
+			      windowMargin: 50
+			    });
+			
+			    // Responsive window margins
+			    breakpoints.on('<=xsmall', function() { $('#main')[0]._poptrox.windowMargin = 0; });
+			    breakpoints.on('>xsmall', function() { $('#main')[0]._poptrox.windowMargin = 50; });
 			  });
+
 			</script>
 
 	</body>
 
 </html>
+
 
 
 
