@@ -1,13 +1,33 @@
 [
   {
+    "src": "images/2026/2026-ahighlight-003.jpeg",
+    "title": "2026 Highlight",
+    "description": "College Ministry is happening all over College Station! Here's a glimpse of all the staff working in college ministries across town when we gathered for Collegiate Day of Prayer!"
+  },
+  {
+    "src": "images/2026/2026-ahighlight-001.jpeg",
+    "title": "2026 Highlight",
+    "description": "I've had the chance to lead and teach as a Fellow in our College Ministry. It's been an amazing opportunity!"
+  },
+  {
+    "src": "images/2025/2025-ahighlight-004.jpeg",
+    "title": "2025 Highlight",
+    "description": "Our church has an AMAZING college staff. This is us!"
+  },
+  {
+    "src": "images/2025/2025-ahighlight-002.jpeg",
+    "title": "2025 Highlight",
+    "description": "I had the chance to lead a missions team of students to Slovakia!"
+  },
+  {
     "src": "images/2024/2024-ahighlight-001.jpeg",
     "title": "2024 Highlight",
-    "description": "001"
+    "description": "From when Emma and I got engaged!"
   },
   {
     "src": "images/2024/2024-ahighlight-002.jpeg",
     "title": "2024 Highlight",
-    "description": "002"
+    "description": "Meet some of our college staff! From left to right, thats CLaudia, Emily, Lucas, me, Christian, and Madi!"
   },
   {
     "src": "images/2025/2025-ahighlight-001.jpeg",
@@ -15,34 +35,14 @@
     "description": "001"
   },
   {
-    "src": "images/2025/2025-ahighlight-002.jpeg",
-    "title": "2025 Highlight",
-    "description": "002"
-  },
-  {
     "src": "images/2025/2025-ahighlight-003.jpeg",
     "title": "2025 Highlight",
     "description": "003"
   },
   {
-    "src": "images/2025/2025-ahighlight-004.jpeg",
-    "title": "2025 Highlight",
-    "description": "004"
-  },
-  {
-    "src": "images/2026/2026-ahighlight-001.jpeg",
-    "title": "2026 Highlight",
-    "description": "001"
-  },
-  {
     "src": "images/2026/2026-ahighlight-002.jpeg",
     "title": "2026 Highlight",
     "description": "002"
-  },
-  {
-    "src": "images/2026/2026-ahighlight-003.jpeg",
-    "title": "2026 Highlight",
-    "description": "003"
   },
   {
     "src": "images/2026/2026-ahighlight-004.jpeg",
@@ -53,11 +53,6 @@
     "src": "images/2026/2026-ahighlight-005.jpeg",
     "title": "2026 Highlight",
     "description": "005"
-  },
-  {
-    "src": "images/2024/2024-events-012.jpeg",
-    "title": "2024 Events",
-    "description": "Meet some of our college staff! From left to right, thats CLaudia, Emily, Lucas, me, Christian, and Madi!"
   },
   {
     "src": "images/2025/2025-staff-001.jpeg",
@@ -498,6 +493,11 @@
     "src": "images/2024/2024-events-011.jpeg",
     "title": "2024 Events",
     "description": "011"
+  },
+  {
+    "src": "images/2024/2024-events-012.jpeg",
+    "title": "2024 Events",
+    "description": "012"
   },
   {
     "src": "images/2024/2024-events-013.jpeg",
